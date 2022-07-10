@@ -1,0 +1,1 @@
+INSERT INTO `student` (`student_id`, `cgpa`, `enrollment_date`, `first_name`, `is_international`, `last_name`, `middle_name`, `student_number`) VALUES (NULL, '3', '2022-07-06', 'asdf', 0, 'asdf', 'asdf', 'aasdf');

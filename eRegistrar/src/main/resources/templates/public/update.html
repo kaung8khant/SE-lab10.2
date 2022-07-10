@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>eRegistrar</h2>
+<h3>Update Student</h3>
+<form action="#" th:action="@{/update}" method="post" th:object="${student}">
+    <input type="hidden" name="studentId" th:value="${stu.studentId}"><br>
+    <label for="snumber">Student Number:</label><br>
+    <input type="text" id="snumber" name="studentNumber" th:value="${stu.studentNumber}"><br>
+
+    <label for="mname">First Name:</label><br>
+    <input type="text" id="fname" name="firstName" th:value="${stu.firstName}"><br>
+
+    <label for="mname">Middle name:</label><br>
+    <input type="text" id="mname" name="middleName" th:value="${stu.middleName}"><br/><br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lastName" th:value="${stu.lastName}"><br><br>
+
+    <label for="cgpa">CGPA:</label><br>
+    <input type="text" id="cgpa" name="cgpa" th:value="${stu.cgpa}"><br><br>
+
+    <label for="date">Enrollment Date:</label><br>
+    <input type="date" id="date" name="enrollmentDate" th:value="${stu.enrollmentDate}" ><br><br>
+
+    <label for="date">International:</label><br>
+    <input type="radio" id="html" name="isInternational" value="0" th:checked="${stu.isInternational?'checked':''}">
+    <label for="html">YES</label><br>
+    <input type="radio" id="css" name="isInternational" value="1" th:checked="${stu.isInternational?'':'checked'}">
+    <label for="css">NO</label><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
